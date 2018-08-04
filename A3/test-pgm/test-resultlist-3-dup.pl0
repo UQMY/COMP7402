@@ -1,0 +1,13 @@
+procedure p( result x: int, y: int ) =
+  begin
+    x := 33;
+    write x;
+    y := 44;
+    write y
+  end;
+var
+  f: int;
+begin
+  call p( f, f );  // ok
+  write f
+end

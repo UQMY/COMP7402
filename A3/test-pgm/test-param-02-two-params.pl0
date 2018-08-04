@@ -1,0 +1,14 @@
+// 2 parameters of different types
+var x: int;
+    t: int;
+procedure p( n: int, b:boolean ) =
+  begin
+    if b then
+      t := n+1
+    else 
+      t := n-1
+  end;
+begin
+  call p(101, false);
+  write t       // writes 100
+end

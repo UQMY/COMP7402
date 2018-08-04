@@ -1,0 +1,36 @@
+const 
+  N = 5;
+type  
+  S = [1..N];
+  V = array S of int;
+  M = array S of V;
+var   
+  vec: V;
+  vec2 : V;
+  mat: M;
+  i : int;
+  
+procedure writevec() =
+  var
+    i : int;
+  begin
+    i := 0;
+    while i < N do
+    begin
+      i := i+1;
+      write vec[i]
+    end
+  end;
+begin
+  i := 0;
+  while i < N do
+  begin
+    i := i+1;
+    vec2[i] := i*i
+  end;
+  vec := vec2;
+  call writevec();
+  mat[N] := vec2;
+  vec := mat[N];
+  call writevec()
+end

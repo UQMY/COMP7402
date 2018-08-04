@@ -1,0 +1,6 @@
+Compiling test-param-05-type-mismatch.pl0
+Parsing complete
+     7   call p( 5 )  // invalid actual parameter type
+******           ^  Error: can't coerce int to boolean
+Static semantic analysis complete
+1 error detected.

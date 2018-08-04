@@ -1,0 +1,18 @@
+// Nest dos
+var 
+  x : int;
+  y : int;
+  gcd : int;
+begin
+  x := 12;
+  y := 21;
+  // A nested version of GCD - not that nesting is needed
+  do x = y then gcd := x break
+  [] x != y then
+     do x < y then y := y - x; write y break
+     [] y < x then x := x - y; write x break
+     od
+     loop
+  od;
+  write gcd
+end

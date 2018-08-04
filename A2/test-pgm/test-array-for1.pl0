@@ -1,0 +1,15 @@
+const 
+  N = 10;
+type
+  S = [1..N];
+  V = array S of int;
+var
+  vec: V;
+begin
+  for i: [1..N] do
+    vec[i] := 100+i
+  od;
+  for i: [1..N] do
+    write vec[i]
+  od
+end

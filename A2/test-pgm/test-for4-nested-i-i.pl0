@@ -1,0 +1,11 @@
+var
+  j : int;
+begin
+  for i: [1..2] do
+    j := i;
+    for i: [1..3] do //control variable has same name as previous
+      write j;
+      write i
+    od
+  od
+end

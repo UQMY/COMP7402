@@ -1,0 +1,10 @@
+Compiling E:\Document\EclipseProjects\A2\test-pgm\test-ford-upper-maxint.pl0
+Parsing complete
+Static semantic analysis complete
+Code generation complete
+No errors detected.
+Running ...
+2147483646
+2147483647
+
+Terminated

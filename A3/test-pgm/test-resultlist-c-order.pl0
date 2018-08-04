@@ -1,0 +1,12 @@
+procedure p( n: int result x: int  ) =
+  begin
+    x := n-1
+  end;
+var 
+  v: int;
+begin
+  call p( 102, v  ); // set v to 101
+  write v; // 101
+  call p( v, v ); // set v to 100
+  write v  // 100
+end

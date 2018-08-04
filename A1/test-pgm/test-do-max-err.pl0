@@ -1,0 +1,13 @@
+// Should stop with no branch has true condition error
+var
+  x : int;
+  y : int;
+  max : int;
+begin
+  x := 2;
+  y := 6;
+  do x = y then max := y break
+  [] y <= x then max := x break
+  od;
+  write max
+end

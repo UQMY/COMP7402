@@ -1,0 +1,12 @@
+type 
+  S = [1..10];
+procedure p( n: S result r: S ) =
+  begin
+    r := n+1
+  end;
+var
+  y: int;
+begin
+  call p( 11, y );  // 11 too big for parameter n of type S
+  write y
+end

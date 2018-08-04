@@ -1,0 +1,14 @@
+procedure p(x: int result z: int ) =
+  begin
+    write x;  // writes 103
+    z := x-1;
+    write z;  // writes 102
+    z := z-1
+  end;
+var 
+  w: int;
+begin
+  w := 103;
+  call p(w,w);
+  write w     // writes 101
+end

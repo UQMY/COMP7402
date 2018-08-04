@@ -1,0 +1,12 @@
+Compiling test-array03-ss.pl0
+Parsing complete
+    13   write vec[false];  // invalid index type
+******             ^  Error: can't coerce boolean to int
+    14   write bvec[1];     // invalid index type
+******              ^  Error: can't coerce int to boolean
+    15   write mat[1];      // invalid element type
+******         ^  Error: can't coerce V to int
+    16   mat := vec         // invalid array assignment
+******          ^  Error: cannot treat V as M
+Static semantic analysis complete
+4 errors detected.

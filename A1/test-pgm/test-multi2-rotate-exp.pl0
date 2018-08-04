@@ -1,0 +1,12 @@
+var
+  x: int;
+  y : int;
+  z : int;
+begin
+  x,y,z := 1,2,3;
+  write x; write y; write z;
+  x,y,z := y,z,x;
+  write x; write y; write z;
+  x,y,z := x+y,y+z,z+x;
+  write x; write y; write z
+end

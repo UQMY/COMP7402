@@ -1,0 +1,11 @@
+const
+   N = 2;
+type
+    A = array [-N..N] of int;
+var 
+    r: A;
+begin
+  r[-N] := 42; // negative index
+  write r[-N]
+end
+

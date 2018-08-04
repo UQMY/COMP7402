@@ -1,0 +1,8 @@
+Compiling test-array04-asgn.pl0
+Parsing complete
+    20   vec1 := vec4;  // invalid
+******           ^  Error: cannot treat V4 as V1
+    21   vec4 := vec1   // invalid
+******           ^  Error: cannot treat V1 as V4
+Static semantic analysis complete
+2 errors detected.

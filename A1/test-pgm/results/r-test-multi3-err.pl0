@@ -1,0 +1,9 @@
+Compiling test-multi3-err.pl0
+Parsing complete
+     5   x,x := 1,2; // repeated lvalue
+******     ^  Error: x assigned more than once
+     6   x,b := b,x  // wrong types
+******          ^  Error: can't coerce boolean to int
+******            ^  Error: can't coerce int to boolean
+Static semantic analysis complete
+3 errors detected.

@@ -1,0 +1,10 @@
+var x: int;
+procedure p( n: int) =
+  var n:int;    // parameter name same as local var error
+  begin
+    x := n
+  end;
+begin
+  call p(13);
+  write x
+end

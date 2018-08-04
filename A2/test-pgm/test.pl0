@@ -1,0 +1,14 @@
+const
+  N = 10;
+type  
+  S = [1..10];
+  V = array S of int;
+var   
+  vec: V;
+  i: int;
+begin
+  i := 2;
+  vec[i] := i*i;
+  write i;
+  write vec[i]
+end

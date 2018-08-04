@@ -1,0 +1,15 @@
+procedure p( result x: int, y: int ) =
+  begin
+    x := 33;
+    y := 44
+  end;
+var 
+  v: int;
+  w: int;
+begin
+  call p( v, w ); // set v to 33 and w to 44
+  write v; // 33
+  write w; // 44
+  call p( v, v ); // set v to 33 then to 44
+  write v  // 44
+end

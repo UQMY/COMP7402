@@ -1,0 +1,28 @@
+// Correct program with array of arrays
+const
+    M = 9;
+type
+    A = array [0..M] of int;
+    B = array [0..M] of A;
+var 
+    i: int;
+    j: int;
+    t: B;
+begin
+    i := 0;
+    while i <= M do
+    begin
+        j := 0;
+        while j <= M do
+        begin
+            t[i][j] := i*10+j;
+            j := j+1
+        end;
+        i := i+1
+    end;
+    write t[0][0];
+    write t[0][9];
+    write t[9][0];
+    write t[9][9]
+end
+

@@ -1,0 +1,11 @@
+var x: int;
+
+procedure noparam() =
+  begin
+    x := 100
+  end;
+begin
+  x := -99;
+  call noparam();
+  write x          // writes 100
+end

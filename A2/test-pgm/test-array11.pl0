@@ -1,0 +1,25 @@
+const
+   M = -5;
+   N = 5;
+type
+    A = array [M..N] of int;
+var 
+    r: A;
+    v: A;
+    i: int;
+begin
+  i := N;
+  while i >= M do
+   begin
+    r[i] := i;
+    i := i-1
+   end;
+  v := r;
+  i := M;
+  while i <= N do
+   begin
+    write v[i];
+    i := i + 1
+   end
+end
+

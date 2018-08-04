@@ -1,0 +1,8 @@
+var x: boolean;
+procedure p( n: boolean ) =
+  begin
+    x := n
+  end;
+begin
+  call p( 5 )  // invalid actual parameter type
+end

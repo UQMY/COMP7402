@@ -1,0 +1,7 @@
+var x: int; 
+	y: int;
+begin
+	x,y := 101,100; 
+	write x; 
+	write y 
+end

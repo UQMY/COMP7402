@@ -1,0 +1,7 @@
+Compiling test-do-gcd-errx.pl0
+Parsing complete
+    10   do x < true then y := y - false; write y loop // type errors in condition and expression
+******          ^  Error: can't coerce boolean to int
+******                             ^  Error: can't coerce boolean to int
+Static semantic analysis complete
+2 errors detected.

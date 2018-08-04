@@ -1,0 +1,17 @@
+type Day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+     WeekDay = [Mon..Fri];
+     WeekEnd = [Sat..Sun];
+     WeekArray = array WeekDay of int;
+     
+var i: int;
+    ar: WeekArray;
+begin
+    i := 104;
+    for d : [Mon..Fri] do
+      ar[d] := i;
+      i := i - 1
+    od;
+    for d : [Mon..Fri] do
+      write ar[d]
+    od
+end

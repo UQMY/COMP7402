@@ -1,0 +1,20 @@
+type 
+  Day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+var 
+  d1: Day;
+
+procedure p() =
+  type 
+    Day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+  var 
+    d2: Day;
+  begin
+    d2 := d1;  // different types
+    d1 := d2;  // different types
+    d1 := Mon;  // different types
+    d2 := Mon
+  end;
+begin
+    d1 := Wed;
+    call p()
+end

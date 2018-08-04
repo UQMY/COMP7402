@@ -1,0 +1,10 @@
+var
+  n : int;
+begin
+  n := 105;
+  for i : [100..n] do
+    n := 100; // should still execute for to 105
+    write i
+  od
+end
+

@@ -1,0 +1,18 @@
+Compiling test-forf-bounds-type-err.pl0
+Parsing complete
+     5   for b:[false..10] do
+******          ^  Error: types of upper and lower bounds must match
+******                 ^  Error: can't coerce int to boolean
+     6     x := b + 1
+******          ^  Error: can't coerce boolean to int
+     8   for b:[false+1..10+true] do
+******          ^  Error: can't coerce boolean to int
+******                      ^  Error: can't coerce boolean to int
+    11   for b:[false..10+true] do
+******          ^  Error: types of upper and lower bounds must match
+******                   ^  Error: can't coerce int to boolean
+******                    ^  Error: can't coerce boolean to int
+    12     x := b + 1
+******          ^  Error: can't coerce boolean to int
+Static semantic analysis complete
+9 errors detected.

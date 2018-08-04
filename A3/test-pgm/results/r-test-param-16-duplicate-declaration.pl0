@@ -1,0 +1,8 @@
+Compiling test-param-16-duplicate-declaration.pl0
+     3 procedure p( n: int ) = // invalid as p already declared
+******           ^  Error: p already declared
+Parsing complete
+     9   call p(); // p declared twice above
+******        ^  Error: Procedure identifier required
+Static semantic analysis complete
+2 errors detected.

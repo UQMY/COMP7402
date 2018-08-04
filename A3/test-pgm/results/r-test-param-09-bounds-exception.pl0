@@ -1,0 +1,13 @@
+Compiling test-param-09-bounds-exception.pl0
+Parsing complete
+Static semantic analysis complete
+Code generation complete
+No errors detected.
+Running ...
+
+Runtime error: bounds check failed at 1020: 13 not in 1..10
+PC=1021 in PROC   <main> : PROCEDURE() level 0 start 1011 : 1030 FP=0 SL=0 DL=0 RA=0
+  x(3) = -2139062144
+End of traceBack
+
+Terminated

@@ -1,0 +1,14 @@
+const 
+  N = 103;
+type
+  S = [101..N];
+var
+  lower: S;
+  upper: S;
+begin
+  lower := 101;
+  upper := N;
+  for i: [lower..upper] do  // lower and upper bounds both subranges
+    write i
+  od
+end

@@ -1,0 +1,14 @@
+const 
+  N = 103;
+type
+  S = [100..N];
+var
+  lower: S;
+  upper: S;
+begin
+  lower := 101;
+  upper := N-1;
+  for i: [lower-1..upper+1] do  // lower and upper bounds expressions
+    write i
+  od
+end

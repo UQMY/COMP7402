@@ -1,0 +1,13 @@
+const 
+  N = 10;
+var
+  x: int;
+begin
+  x := 0;
+  for i: [1..N] do
+    for j: [1..N] do
+      x := x + i + j
+    od
+  od;
+  write x
+end

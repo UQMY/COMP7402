@@ -1,0 +1,12 @@
+var
+  x : int;
+  y : int;
+  z : int;
+begin
+  x := 1;
+  y := 2;
+  z := 3;
+  x y := y x;  // syntax error
+  x,y := x + y, x z; // syntax error
+  x = 1 // should be := 
+end

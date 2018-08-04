@@ -1,0 +1,13 @@
+Compiling test-array02-ss.pl0
+Parsing complete
+     5   V = array X of Y;       // index type not a subrange and undefined element types
+******             ^  Error: index type of an array must be a subrange
+******                  ^  Error: undefined type: Y
+     6   W = array [5..3] of int;  // lower > upper 
+******             ^  Error: Upper bound of subrange less than lower bound
+     7   A = array int of int;   // index not subrange or enumeration
+******             ^  Error: index type of an array must be a subrange
+    11   C = array S of D;      // circular
+******                  ^  Error: D is circularly defined
+Static semantic analysis complete
+5 errors detected.

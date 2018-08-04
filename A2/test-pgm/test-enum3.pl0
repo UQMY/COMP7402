@@ -1,0 +1,15 @@
+type 
+   enum1 = {a,b,c};
+   enum2 = {d,e,f};
+   enum3 = {g,h,i};
+var
+   x: enum1;
+   y: enum2;
+begin
+   x := a;
+   y := d;
+   if x = a then write 103 else write -93;
+   if y != d then write -92 else write 102;
+   if 1 = 2 then write -91 else write 101;
+   if true = true then write 100 else write 90
+end

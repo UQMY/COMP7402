@@ -1,0 +1,18 @@
+var
+  x : int;
+  y : int;
+  max : int;
+begin
+  x := 2;
+  y := 6;
+  do x = y then max := x break
+  od;
+  do x <= y then max := y brk // "break" misspelt
+  [] y <= x then max := x break
+  od;
+  do x <= y the max := y break // "then" misspelt
+  od;
+  do x <= y then max := y break
+  ] y <= x then max := x // "[]" misspelt
+  od
+end

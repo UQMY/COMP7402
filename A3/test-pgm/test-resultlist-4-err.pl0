@@ -1,0 +1,34 @@
+procedure one ( x: int, x: int result x: int, x: int ) = // duplicate parameters
+  begin
+    write x
+  end;
+// Valid
+procedure two( x: int, c: boolean result y: int, d: boolean ) =
+  begin
+    if c then
+      write 1
+    else
+      write 0;
+    y := x;
+    d := c
+  end;
+// Valid
+procedure three( x: int result y: int, z:int ) =
+  begin
+    y := x;
+    z := x
+  end;
+
+var
+  v: int;
+  w: int;
+  b: boolean;
+begin
+  call one(1,2,v,w);   // call to invalid proc - shouldn't crash compiler
+  call two(v,b,w,b);   // ok call
+  call two(b,v,b,w);   // invalid types of all parameters 
+  call three(v,v,w);   // ok call
+  call three(v,w,w);   // ok repeated actual result parameter - not good style
+  call two(v,b);       // too few parameters
+  call two(v,b,w,b,b,v) // too many parameters
+end

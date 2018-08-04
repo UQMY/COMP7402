@@ -1,0 +1,12 @@
+type 
+  S = [1..10];
+procedure p( n: S result x: int ) =
+  begin
+    x := n+1
+  end;
+var
+  m: S;
+begin
+  call p( 10, m ); // result x is 11 and too big for m 
+  write m
+end

@@ -1,0 +1,21 @@
+type x = int;
+     b = boolean;
+
+// The following parameters are valid
+// The type of parameter x is the type x declared globally to be int
+// and similarly the type of parameter b is the type b declared globally
+// This is not recommended style!     
+procedure p( x : x, b : b ) = 
+  begin
+    write x;  // valid as x is an integer
+    write b   // invalid as b is boolean
+ end;
+var
+   i: int;
+   c: boolean;
+begin
+   i := 1;
+   call p( i, c );  // types ok
+   call p( c, c );  // type mismatch first
+   call p( i, i )   // type mismatch second
+end

@@ -1,0 +1,13 @@
+Compiling E:\Document\EclipseProjects\A3\test-pgm\test-resultlist-a-subr.pl0
+Parsing complete
+Static semantic analysis complete
+Code generation complete
+No errors detected.
+Running ...
+
+Runtime error: bounds check failed at 1023: 11 not in 1..10
+PC=1024 in PROC   <main> : PROCEDURE() level 0 start 1014 : 1042 FP=0 SL=0 DL=0 RA=0
+  y(3) = -2139062144
+End of traceBack
+
+Terminated

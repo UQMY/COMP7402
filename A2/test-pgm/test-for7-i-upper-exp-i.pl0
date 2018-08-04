@@ -1,0 +1,13 @@
+const 
+  N = 5;
+type
+  S = [1..N];
+var
+  i: S;
+begin
+  i := N;
+  for i: [1..i*2] do // upper bound is global i
+    write i  // local control loop variable
+  od;
+  write i  // global i
+end

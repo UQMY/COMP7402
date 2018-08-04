@@ -1,0 +1,9 @@
+const 
+  N = 1;
+begin
+  for i: [1..1] do    // only one value in range
+    for j: [1..0] do  // no values in range
+      write i*j
+    od
+  od
+end

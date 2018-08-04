@@ -1,0 +1,11 @@
+var x: int;
+
+procedure p( n: int ) =
+  begin
+    n := n+1;
+    x := n
+  end;
+begin
+  call p(100);
+  write x      // writes 101
+end

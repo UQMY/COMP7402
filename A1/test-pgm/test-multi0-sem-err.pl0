@@ -1,0 +1,30 @@
+var
+  x: int;
+  y: int;
+  z: int;
+  b: boolean;
+const
+  c = 42;  
+begin
+  x,x := 1,2;         // repeated variable on left
+  x,y,z,x := 1,2,3,4; // repeated variable on left
+  x,x,x,x := 1,2,3,4; // repeated variable on left
+  
+  x,b := true,1;          // both type incompatible
+  x,y,z,b := 1,2,false,3; // z and b assigned incompatible values
+  
+  c,x := true,true;  // cannot assign to a constant
+  
+  x,y,z := 1,2;  // too few expressions
+  x,y,z := 1;    // too few expressions
+  a,y,z := ;     // too few expressions (syntax error)
+
+  x,y := 1,2,3;  // too few lvalues
+  x := 1,2,3;    // too few lvalues
+  := 1,2,3;      // too few lvalues (syntax error)
+
+  x = 1; // syntax error - should be :=
+
+  x := 1 // valid single assignment
+end
+  

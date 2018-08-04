@@ -1,0 +1,6 @@
+Compiling E:\Document\EclipseProjects\A2\test-pgm\test-enum2-err.pl0
+Parsing complete
+     3      nodays = [Sat..Fri]; // Upper bound less than lower - error
+******               ^  Error: Upper bound of subrange less than lower bound
+Static semantic analysis complete
+1 error detected.

@@ -1,0 +1,11 @@
+var p: int;
+    x: int;
+procedure p( n: int ) = // invalid as p already declared
+  begin
+    x := n
+  end;
+begin
+  x := 0;
+  call p(); // p declared twice above
+  write x
+end

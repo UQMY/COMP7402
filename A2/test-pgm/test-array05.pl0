@@ -1,0 +1,13 @@
+// Correct program 
+const 
+    N = 9;
+type
+    A = array [0..N] of int;
+var
+    r: A;
+begin
+  r[0] := 101;
+  r[9] := 100;
+  write r[0];
+  write r[9]
+end

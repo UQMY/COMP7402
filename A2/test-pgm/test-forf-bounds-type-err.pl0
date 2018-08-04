@@ -1,0 +1,14 @@
+var
+  x : int;
+begin
+  x := 0;
+  for b:[false..10] do
+    x := b + 1
+  od;
+  for b:[false+1..10+true] do
+    x := b + 1
+  od;
+  for b:[false..10+true] do
+    x := b + 1
+  od
+end

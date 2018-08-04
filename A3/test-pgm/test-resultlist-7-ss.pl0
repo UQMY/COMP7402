@@ -1,0 +1,33 @@
+procedure fact( n: int result r: int ) =
+  begin
+    if n = 0 then
+      r := 1
+    else
+     begin
+      call fact( n-1, r );
+      call fact( r, n-1 );  // result param must be LValue
+      call fact( 5, 120 );  // result param must be LValue
+      r := r * n
+     end
+  end;
+procedure p( result x: int, y: int, b: boolean ) =
+  begin
+    if b then
+      write x
+    else
+      write y
+  end;
+var
+  f: int;
+  g: int;
+  c: boolean;
+begin
+  call fact( 5, 120 );  // actual result parameter should be LValue
+  call fact( 5 );       // too few params
+  call fact( 5, f, f ); // too may params
+  call p( f, g, c );    // ok 
+  call p( c, f, g );    // type mismatch
+  call p( f, f, c );    // ok
+  call p( 1, 2, true ); // actual result parameter must be an LValue
+  write f
+end

@@ -1,0 +1,18 @@
+Compiling test-array15-asgn.pl0
+Parsing complete
+Static semantic analysis complete
+Code generation complete
+No errors detected.
+Running ...
+1
+4
+9
+16
+25
+1
+4
+9
+16
+25
+
+Terminated

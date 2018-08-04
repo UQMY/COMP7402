@@ -1,0 +1,14 @@
+type day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+     weekday = [Mon..Fri];
+     nodays = [Sat..Fri]; // Upper bound less than lower - error
+var d: day;
+    w: weekday;
+begin
+    d := Mon;
+    w := d;
+    d := w;
+    if d = Mon then
+        write 1
+    else
+        write 0
+end

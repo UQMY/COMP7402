@@ -1,0 +1,6 @@
+Compiling test-param-14-too-many-args.pl0
+Parsing complete
+     9   call p( 1, true, 2 );  // Too many args
+******        ^  Error: wrong number of parameters
+Static semantic analysis complete
+1 error detected.

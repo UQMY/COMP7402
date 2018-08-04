@@ -1,0 +1,15 @@
+type 
+  subr = [1 ..100];
+var x: int;
+
+procedure p( n: subr ) =
+  begin
+    x := n
+  end;
+begin
+  x := -98;
+  call p( 100 );
+  write x;       // writes 100
+  call p( -99 ); // -99 out of bounds runtime error
+  write x
+end

@@ -1,0 +1,7 @@
+const 
+  N = 1;
+begin
+  for b: [false..true] do // boolean control variable
+    if b then write 100 else write 101
+  od
+end

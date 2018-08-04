@@ -1,0 +1,7 @@
+var
+  x: int;
+  b : boolean;
+begin
+  x,x := 1,2; // repeated lvalue
+  x,b := b,x  // wrong types
+end

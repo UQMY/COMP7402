@@ -1,0 +1,10 @@
+Compiling test-enum6-duplicate.pl0
+Parsing complete
+    12     d2 := d1;  // different types
+******           ^  Error: can't coerce Day to Day
+    13     d1 := d2;  // different types
+******           ^  Error: can't coerce Day to Day
+    14     d1 := Mon;  // different types
+******           ^  Error: can't coerce Day to Day
+Static semantic analysis complete
+3 errors detected.

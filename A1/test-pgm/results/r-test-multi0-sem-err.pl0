@@ -1,0 +1,36 @@
+Compiling test-multi0-sem-err.pl0
+    18   x,y,z := 1,2;  // too few expressions
+******         ^  Error: number of variables doesn't match number of expressions in assignment
+    19   x,y,z := 1;    // too few expressions
+******         ^  Error: number of variables doesn't match number of expressions in assignment
+    20   a,y,z := ;     // too few expressions (syntax error)
+******         ^  Error: number of variables doesn't match number of expressions in assignment
+******            ^  Error: ';' at line 19 column 11 cannot start Condition List
+    22   x,y := 1,2,3;  // too few lvalues
+******       ^  Error: number of variables doesn't match number of expressions in assignment
+    23   x := 1,2,3;    // too few lvalues
+******     ^  Error: number of variables doesn't match number of expressions in assignment
+    24   := 1,2,3;      // too few lvalues (syntax error)
+******   ^  Error: ':=' at line 23 column 2 cannot start Statement
+    26   x = 1; // syntax error - should be :=
+******     ^  Error: Parse error, expecting ':=' in MDAssignment
+Parsing complete
+     9   x,x := 1,2;         // repeated variable on left
+******     ^  Error: x assigned more than once
+    10   x,y,z,x := 1,2,3,4; // repeated variable on left
+******         ^  Error: x assigned more than once
+    11   x,x,x,x := 1,2,3,4; // repeated variable on left
+******     ^  Error: x assigned more than once
+******       ^  Error: x assigned more than once
+******         ^  Error: x assigned more than once
+    13   x,b := true,1;          // both type incompatible
+******          ^  Error: can't coerce boolean to int
+******               ^  Error: can't coerce int to boolean
+    14   x,y,z,b := 1,2,false,3; // z and b assigned incompatible values
+******                  ^  Error: can't coerce boolean to int
+******                        ^  Error: can't coerce int to boolean
+    16   c,x := true,true;  // cannot assign to a constant
+******   ^  Error: variable expected
+******               ^  Error: can't coerce boolean to int
+Static semantic analysis complete
+19 errors detected.

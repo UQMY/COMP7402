@@ -1,0 +1,10 @@
+var x: int;
+
+procedure p( n: int, n:int ) = // duplicate parameter name
+  begin
+    x := n
+  end;
+begin
+  call p(13, 2);
+  write x
+end

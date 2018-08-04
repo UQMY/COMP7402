@@ -1,0 +1,17 @@
+const 
+  N = 10;
+type
+  S = [1..N];
+  V = array S of int;
+var
+  vec: V;
+  i: S;
+begin
+  i := N;
+  for i: [1..i] do // upper bound is global i
+    vec[i] := 100+i
+  od;
+  for i: [1..i] do
+    write vec[i]
+  od
+end

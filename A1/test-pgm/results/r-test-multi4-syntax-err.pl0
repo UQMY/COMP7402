@@ -1,0 +1,11 @@
+Compiling test-multi4-syntax-err.pl0
+     9   x y := y x;  // syntax error
+******     ^  Error: identifier("y") cannot follow LValue in LValue List
+******            ^  Error: identifier("x") cannot follow LValue in Factor
+    10   x,y := x + y, x z; // syntax error
+******                   ^  Error: identifier("z") cannot follow LValue in Factor
+    11   x = 1 // should be := 
+******     ^  Error: Parse error, expecting ':=' in MDAssignment
+Parsing complete
+Static semantic analysis complete
+4 errors detected.

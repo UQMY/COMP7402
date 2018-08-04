@@ -1,0 +1,14 @@
+Compiling E:\Document\EclipseProjects\A2\test-pgm\test-array14-big-index.pl0
+Parsing complete
+Static semantic analysis complete
+Code generation complete
+No errors detected.
+Running ...
+10000
+100000000
+10001
+100020001
+10002
+100040004
+
+Terminated

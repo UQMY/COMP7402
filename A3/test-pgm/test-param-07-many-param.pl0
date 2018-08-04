@@ -1,0 +1,45 @@
+var o1 : int;
+var o2 : int;
+var o3 : boolean;
+var o4 : int;
+var o5 : int;
+var o6 : boolean;
+var o7 : int;
+var o8 : int;
+var o9 : boolean;
+var o10: int;
+var o11: int;
+var o12: boolean;
+
+procedure p( a1: int,
+	     a2: int,
+	     a3: int,
+	     a4: boolean,
+	     a5: int,
+	     a6: int,
+	     a7: boolean,
+	     a8: int,
+	     a9: int,
+	     a10: boolean) =
+  begin
+    if a4 then 
+	  begin
+        o1 := a1 + 100;
+        o2 := a2 + 100; 
+        o3 := true     
+      end
+    else
+      begin
+        o4 := a5 + 100; 
+        o5 := a6 + 100;
+        o6 := true 
+      end
+  end;
+begin
+  call p( 1, 2, 4, true, 3, 4, true, 32, 64, true);
+  write o1;  // writes 101
+  write o2;  // writes 102
+  call p( 1, 2, 4, false, 3, 4, true, 32, 64, true);
+  write o4;  // writes 103
+  write o5   // writes 104
+end

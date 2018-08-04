@@ -1,0 +1,21 @@
+Compiling test-resultlist-7-ss.pl0
+Parsing complete
+     8       call fact( r, n-1 );  // result param must be LValue
+******                      ^  Error: actual result parameter must be an LValue
+     9       call fact( 5, 120 );  // result param must be LValue
+******                     ^  Error: actual result parameter must be an LValue
+    25   call fact( 5, 120 );  // actual result parameter should be LValue
+******                 ^  Error: actual result parameter must be an LValue
+    26   call fact( 5 );       // too few params
+******        ^  Error: wrong number of parameters
+    27   call fact( 5, f, f ); // too may params
+******        ^  Error: wrong number of parameters
+    29   call p( c, f, g );    // type mismatch
+******           ^  Error: can't coerce int to boolean
+******                 ^  Error: can't coerce boolean to int
+    31   call p( 1, 2, true ); // actual result parameter must be an LValue
+******           ^  Error: actual result parameter must be an LValue
+******              ^  Error: actual result parameter must be an LValue
+******                 ^  Error: actual result parameter must be an LValue
+Static semantic analysis complete
+10 errors detected.

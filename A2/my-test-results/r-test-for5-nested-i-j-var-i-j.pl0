@@ -1,0 +1,10 @@
+Compiling E:\Document\EclipseProjects\A2\test-pgm\test-for5-nested-i-j-var-i-j.pl0
+Parsing complete
+    12       i := 2; // invalid assignment to control loop variable
+******       ^  Error: can't assign to for loop control variable
+    13       j := 3; // invalid assignment to control loop variable
+******       ^  Error: can't assign to for loop control variable
+    16     i := 3 // invalid assignment to control loop variable
+******     ^  Error: can't assign to for loop control variable
+Static semantic analysis complete
+3 errors detected.

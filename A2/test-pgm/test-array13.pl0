@@ -1,0 +1,17 @@
+// Correct program with an array of arrays
+const
+    N = 9;
+    M = 14;
+    L = 5;
+type
+    A = array [0..N] of int;
+    B = array [0..M] of A;
+    C = array [0..L] of B;
+var 
+    t: C;
+begin
+  t[0][0][0] := 101;
+  t[5][14][9] := 100;
+  write t[0][0][0];
+  write t[5][14][9]
+end

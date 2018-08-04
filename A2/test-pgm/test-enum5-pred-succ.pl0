@@ -1,0 +1,27 @@
+type Day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+     WeekArray = array Day of int;
+     
+var d: Day;
+    i: int;
+    ar: WeekArray;
+begin
+    d := Mon;
+    i := 100;
+    ar[d] := i;
+    while d < Sun do
+     begin
+      i := i + 1;
+      d := succ d;
+      ar[d] := i
+     end;
+    while d > Mon do
+     begin
+      write ar[d];
+      d := pred d
+     end;
+    write ar[d];
+    d := pred Mon; // i.e. Sun
+    write ar[d];
+    d := succ Sun; // i.e. Mon
+    write ar[d]
+end

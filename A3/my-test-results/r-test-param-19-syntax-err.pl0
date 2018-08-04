@@ -1,0 +1,10 @@
+Compiling E:\Document\EclipseProjects\A3\test-pgm\test-param-19-syntax-err.pl0
+    11   call p( , true );  // extra comma
+******           ^  Error: PL0 syntax error
+    12   call p( 5, true, );  // extra comma
+******                    ^  Error: PL0 syntax error
+Parsing complete
+    12   call p( 5, true, );  // extra comma
+******        ^  Error: wrong number of parameters
+Static semantic analysis complete
+3 errors detected.

@@ -1,0 +1,11 @@
+var i: int;
+    j: int;
+    k: int;
+begin
+    i,j,k := 1,2,3;
+    write i; write j; write k;
+    i,j,k := j,k,i;
+    write i; write j; write k;
+    i,j,k := k,i,j;
+    write i; write j; write k
+end

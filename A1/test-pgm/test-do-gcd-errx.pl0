@@ -1,0 +1,15 @@
+// Greatest Common Divisor calculator - for x = 12 and y = 21 the expected
+// sequence of outputs is 9, 3, 6, 3, and finally 3 as the GCD
+var 
+  x : int;
+  y : int;
+  gcd : int;
+begin
+  x := 12;
+  y := 21;
+  do x < true then y := y - false; write y loop // type errors in condition and expression
+  [] x = y then gcd := x break
+  [] y < x then x := x - y; write x loop
+  od;
+  write gcd
+end

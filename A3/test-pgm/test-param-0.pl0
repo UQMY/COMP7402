@@ -1,0 +1,15 @@
+procedure p() =
+  var x: int;
+  begin
+    x := y;
+    write x;  // writes 102
+    x := x-1;
+    y := x
+  end;
+
+var y: int;
+begin
+  y := 102;
+  call p();
+  write y    // writes 101
+end

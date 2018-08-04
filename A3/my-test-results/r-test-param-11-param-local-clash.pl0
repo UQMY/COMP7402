@@ -1,0 +1,6 @@
+Compiling E:\Document\EclipseProjects\A3\test-pgm\test-param-11-param-local-clash.pl0
+     5   var n:int;      // invalid: local name identical to formal param
+******       ^  Error: n already declared
+Parsing complete
+Static semantic analysis complete
+1 error detected.

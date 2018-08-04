@@ -1,0 +1,9 @@
+var
+  n : int;
+begin
+  n := 2147483647;  // maxint 
+  for i : [n-1..n] do
+    write i
+  od
+end
+

@@ -1,0 +1,13 @@
+var
+  x : int;
+  y : int;
+  max : int;
+begin
+  x := 2;
+  y := 6;
+  do x if b then max := x break // invalid "if" in condition
+  od;
+  do x <= y then max := y; break // invalid ";" before "break"
+  [] y <= x then max := x break
+  end // do should end with od
+end

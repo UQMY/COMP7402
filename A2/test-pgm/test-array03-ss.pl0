@@ -1,0 +1,17 @@
+const 
+  N = 10;
+type
+  V = array [1..N] of int;
+  M = array [1..N] of V;
+  B = array [false..true] of int;
+var
+  bvec : B;
+  vec : V;
+  vec2 : V;
+  mat : M;
+begin
+  write vec[false];  // invalid index type
+  write bvec[1];     // invalid index type
+  write mat[1];      // invalid element type
+  mat := vec         // invalid array assignment
+end

@@ -1,0 +1,13 @@
+type
+   BOOL = { false, true };
+   A = array BOOL of int;
+var
+   x: BOOL;
+   v: A;
+begin
+   x := true;
+   v[false] := 101;
+   v[true]  := 100;
+   write v[false];
+   write v[true]
+end

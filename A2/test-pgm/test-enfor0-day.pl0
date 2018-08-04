@@ -1,0 +1,15 @@
+type Day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+     WeekArray = array Day of int;
+     
+var i: int;
+    ar: WeekArray;
+begin
+    i := 100;
+    for d : [Mon..Sun] do
+      ar[d] := i;
+      i := i + 1
+    od;
+    for d: [Mon..Sun] do
+      write ar[d]
+    od
+end

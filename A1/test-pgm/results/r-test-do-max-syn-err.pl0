@@ -1,0 +1,14 @@
+Compiling test-do-max-syn-err.pl0
+     8   do x if b then max := x break // invalid "if" in condition
+******        ^  Error: 'if' at line 7 column 7 cannot follow LValue in Factor
+    10   do x <= y then max := y; break // invalid ";" before "break"
+******                            ^  Error: 'break' at line 9 column 27 cannot start Statement
+    12   end // do should end with od
+******   ^  Error: Parse error, expecting 'od' in Do Statement
+    13 end
+****** ^  Error: 'end' at line 12 column 0 cannot follow Compound Statement in Block
+Parsing complete
+     8   do x if b then max := x break // invalid "if" in condition
+******      ^  Error: can't coerce int to boolean
+Static semantic analysis complete
+5 errors detected.

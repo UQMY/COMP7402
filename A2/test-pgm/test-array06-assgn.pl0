@@ -1,0 +1,27 @@
+const
+  N = 10;
+type
+  V = array [1..N] of int;
+var
+  v : V;
+  w : V;
+  i: int;
+  j : int;
+begin
+  i := 0;
+  j := -1;
+  while i < N do
+    begin
+      i := i+1;
+      w[i] := i*i
+    end;
+  v := w;
+  //write i;
+  //write j;
+  i := 0;
+  while i < N do
+    begin
+      i := i+1;
+      write v[i]
+    end
+end

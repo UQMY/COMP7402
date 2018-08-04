@@ -1,0 +1,18 @@
+var
+  n : int;
+begin
+  n := 105;
+  for i  [100..n] do // ":" missing
+    write i
+  od;
+  for i : 100..n] do // "[" missing
+    write i
+  od;
+  for i : [100..n do // "]" missing
+    write i
+  od;
+  for i : [100..n]  // "do" missing
+    write i
+  od
+end
+

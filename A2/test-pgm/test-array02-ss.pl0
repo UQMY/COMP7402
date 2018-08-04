@@ -1,0 +1,16 @@
+const 
+  N = 10;
+type  
+  S = [1..N];
+  V = array X of Y;       // index type not a subrange and undefined element types
+  W = array [5..3] of int;  // lower > upper 
+  A = array int of int;   // index not subrange or enumeration
+  B = array [false..true] of int;
+  M = array [1..2] of V;   // element type defined, but in error - no error required
+  X = array [-N..N] of int;
+  C = array S of D;      // circular
+  D = array S of E;      // circular
+  E = array S of C;      // circular
+begin
+   write 1
+end

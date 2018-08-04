@@ -1,0 +1,24 @@
+const
+   N = 2;
+type
+    A = array [-N..N] of int;
+var 
+    r: A;
+    v: A;
+    i: int;
+begin
+  i := N;
+  while i >= -N do
+   begin
+    r[i] := i;
+    i := i-1
+   end;
+  v := r;
+  i := -N;
+  while i <= N do
+   begin
+    write v[i];
+    i := i + 1
+   end
+end
+

@@ -1,0 +1,12 @@
+var
+  x : int;
+begin
+  x := 0;
+  // does the implementation of for leak stack space?
+  for i: [1..10000] do
+    for j: [1..2] do
+      x := x + 1
+    od
+  od;
+  write x
+end

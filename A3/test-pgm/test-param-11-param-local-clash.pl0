@@ -1,0 +1,16 @@
+var 
+  x: int;
+
+procedure p( n: int ) =
+  var n:int;      // invalid: local name identical to formal param
+  procedure q( ) =
+    begin
+      x := n
+    end;
+  begin
+    call q( )
+  end;
+begin
+  call p(13);
+  write x
+end

@@ -1,0 +1,12 @@
+type 
+  S = [1..10];
+procedure p( n: S result r: S ) =
+  begin
+    r := n+1
+  end;
+var
+  y: int;
+begin
+  call p( 1, y );  // coerce result r of type S to int
+  write y
+end

@@ -1,0 +1,22 @@
+type day = { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+     weekday = [Mon..Fri];
+     weekend = [Sat..Sun];
+     oneday  = [Wed..Wed];
+var d: day;
+    w: weekday;
+    x: oneday;
+begin
+    d := Wed;
+    w := d;
+    d := w;
+    x := w;
+    w := x;
+    x := d;
+    d := x;
+    if d = Wed then
+        write 100
+    else
+        write -99;
+    x := Wed; // ok
+    x := Fri  // subrange error at run time
+end

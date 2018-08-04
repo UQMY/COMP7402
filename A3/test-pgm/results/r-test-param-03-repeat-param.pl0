@@ -1,0 +1,8 @@
+Compiling test-param-03-repeat-param.pl0
+     3 procedure p( n: int, n:int ) = // duplicate parameter name
+******                      ^  Error: n repeated
+Parsing complete
+     8   call p(13, 2);
+******        ^  Error: wrong number of parameters
+Static semantic analysis complete
+2 errors detected.

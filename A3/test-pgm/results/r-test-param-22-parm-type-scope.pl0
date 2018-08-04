@@ -1,0 +1,10 @@
+Compiling test-param-22-parm-type-scope.pl0
+Parsing complete
+    11     write b   // invalid as b is boolean
+******           ^  Error: can't coerce boolean to int
+    19    call p( c, c );  // type mismatch first
+******            ^  Error: can't coerce boolean to int
+    20    call p( i, i )   // type mismatch second
+******               ^  Error: can't coerce int to boolean
+Static semantic analysis complete
+3 errors detected.

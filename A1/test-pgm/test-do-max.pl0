@@ -1,0 +1,12 @@
+var
+  x : int;
+  y : int;
+  max : int;
+begin
+  x := 90;
+  y := 100;
+  do x <= y then max := y break
+  [] y <= x then max := x break
+  od;
+  write max
+end

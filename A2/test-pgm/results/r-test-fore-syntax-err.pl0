@@ -1,0 +1,11 @@
+Compiling test-fore-syntax-err.pl0
+     5   for i  [100..n] do // ":" missing
+******          ^  Error: PL0 syntax error
+     8   for i : 100..n] do // "[" missing
+******           ^  Error: PL0 syntax error
+    11   for i : [100..n do // "]" missing
+******                   ^  Error: PL0 syntax error
+    19 
+****** ^  Error: PL0 unrecovered syntax error
+Parsing complete
+4 errors detected.

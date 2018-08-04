@@ -1,0 +1,16 @@
+var x: int;
+
+procedure p( n: int ) =
+  var m: int;
+  procedure q( m: int ) =
+    begin //q
+      x := n + m
+    end; // q
+  begin // p
+    m := n+9;
+    call q( n+2 )
+  end; //p
+begin
+  call p(49);
+  write x    // writes 100
+end
